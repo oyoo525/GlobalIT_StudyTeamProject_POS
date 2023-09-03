@@ -39,12 +39,6 @@ public class Side extends Menu {
 				break;
 			default : 
 				System.err.println("잘못 선택했습니다. 다시 선택해 주세요.");
-		}
-
-		
-		
-		
-		
-		
-	};
+		}	
+	}
 }

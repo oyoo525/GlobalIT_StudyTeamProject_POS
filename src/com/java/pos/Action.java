@@ -60,20 +60,6 @@ public class Action extends Menu {
 				default :
 					System.out.println("잘못 선택했습니다. 다시 선택해주세요.<action>");
 			}	
-			
-			
-		
-		
 		}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	}
-
 }

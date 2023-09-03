@@ -18,6 +18,7 @@ public class Cash extends Menu{
 		int sum = 0;
 		for(Menu m : cart) {
 			sum += cart.get(index).getPrice();
+			index++;
 		}
 		if(sum-money == 0) {
 			System.out.println("결제가 완료되었습니다.");
@@ -28,27 +29,25 @@ public class Cash extends Menu{
 		} else if (sum-money > 0) {
 			System.out.println("결제금액이 " +(sum - money)+ "부족합니다.");
 			System.out.println("추가 지불하실 금액을 입력해주세요.");
-			int low = sum-money;
-			
+			int low = sum-money; 
 			int add = 0;
-			do {
+			while (low != 0) {
 				low = low-add;
-				Scanner scan2 = new Scanner(System.in);
+				Scanner scan2 = new Scanner(System.in);	
 				add = scan2.nextInt();
-				System.out.println("결제금액이 " +(low - add)+ "부족합니다.");
-				System.out.println("추가 지불하실 금액을 입력해주세요.");
-
-			} while (low == add && low < add); {
-				if(low == add) {
+				if(low > add) {
+					System.out.println("결제금액이 " +(low - add)+ "부족합니다.");
+					System.out.println("추가 지불하실 금액을 입력해주세요.");	
+				} else if(low == add) {
 					System.out.println("결제가 완료되었습니다.");
+					break;
 				} else if (low < add) {
 					System.out.println("결제가 완료되었습니다.\n거스름돈 " + (add - low) + "원 입니다.");
+					break;
 				}
+				continue;
 			}
 			cart.clear();
 		}
-		
-		  
-		
-	};
+	}
 }

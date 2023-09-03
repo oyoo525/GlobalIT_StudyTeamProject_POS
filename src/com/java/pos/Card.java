@@ -11,6 +11,4 @@ public class Card extends Menu{
 		System.out.println("결제가 완료되었습니다");
 		cart.clear();
 	};
-	
-	
 }

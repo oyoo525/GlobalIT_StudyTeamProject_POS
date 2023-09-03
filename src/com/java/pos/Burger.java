@@ -52,20 +52,5 @@ public class Burger extends Menu {
 			default : 
 				System.err.println("잘못 선택했습니다. 다시 선택해 주세요.");
 		}
-		
-		
-		
-	
 	}
-
-
-
-
-
-
-	
-	
-	
-	
-	
 }

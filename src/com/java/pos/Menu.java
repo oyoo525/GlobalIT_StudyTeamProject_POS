@@ -30,12 +30,8 @@ public class Menu implements Choice{
 	
 	
 	@Override
-	public void choice() {
-		System.out.println("주문시작");
-	}
+	public void choice() {}
 	@Override
-	public void pay() {
-		System.out.println("결제시작");
-	};
+	public void pay() {}
 	
 }

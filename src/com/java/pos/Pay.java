@@ -25,9 +25,5 @@ public class Pay {
 				cash.pay();
 				break;
 		}
-			
 	}
-
-
-	
 }

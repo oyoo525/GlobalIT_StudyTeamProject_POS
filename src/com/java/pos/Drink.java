@@ -14,7 +14,7 @@ public class Drink extends Menu {
 		Drink drink1 = new Drink("발렌타인 30년산", 1000000);
 		Drink drink2 = new Drink("민트초코에이드", 3500);
 		Drink drink3 = new Drink("복숭아독차", 112000);
-		Drink drink4 = new Drink("막걸리", 5000);
+		Drink drink4 = new Drink("막걸리   ", 5000);
 		
 		ArrayList<Drink> drinks = new ArrayList<Drink>(); 
 		drinks.add(drink1);
@@ -45,11 +45,5 @@ public class Drink extends Menu {
 			default : 
 				System.err.println("잘못 선택했습니다. 다시 선택해 주세요.");
 		}
-		
-	};
-	
-	
-	
-	
-	
+	}
 }
