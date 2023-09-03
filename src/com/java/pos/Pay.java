@@ -12,7 +12,7 @@ public class Pay {
 	
 	public void choice() {
 
-		System.out.println("결제수단을 설택해주세요.\n1.카드  2.현금");
+		System.out.println("결제수단을 선택해주세요.\n1.카드  2.현금");
 
 		Scanner scan = new Scanner(System.in);
 		String pay;
